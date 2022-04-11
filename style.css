@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+section,h2{
+  margin: 20px 5vw;
+  position: relative;  
+  /* height: 450px; */
+  width: 92vw;
+  display: flex;
+  align-items: center;
+}
+
+.swiper{
+  width: 85vw;
+}
+
+
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin: 0.5vw;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  /* display:inline-block; */
+}
+
+
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0.05rem;
+  position: relative;
+  z-index: 100;
+}
+
+section .card .image{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 2px;
+  padding: 3px;
+  
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.swiper-pagination{
+  position: absolute;
+}
+
+
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #6ccce4;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #67dbc8;
+}
